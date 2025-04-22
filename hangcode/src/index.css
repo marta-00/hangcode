@@ -1,0 +1,99 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status {
+  background-color: #10A95B;
+  color: white;
+  padding: 10px;
+  font-size: 1.1em;
+  height: min-content;
+  line-height: 50%;
+  border-radius: 4px;
+}
+
+.status::first-line {
+  font-weight: bold;
+}
+
+.languages-container {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+
+}
+
+.language {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.word > p {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.word > p span {
+  display: inline-block;
+  background-color: #dedede;
+  color: #333;
+  padding: 10px;
+  border-bottom: 2px solid #333;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.keyboard {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 10px; /* Space between buttons */
+  max-width: 550px;
+}
+
+.keyboard > button {
+  color: #333;
+  width: 50px; /* Fixed width for buttons */
+  padding: 15px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #FCBA29;
+  display: flex; /* Make button a flex container */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.restart {
+  background-color: rgb(151, 192, 241);
+  color: #333;
+  padding: 15px;
+  font-size: 1.1em;
+  height: min-content;
+  line-height: 50%;
+  border-radius: 4px;
+  margin-top: 20px;
+  border: 1px solid #333;
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
